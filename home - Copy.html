@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Orbitron|Special+Elite" rel="stylesheet">
+
+ <title>home page</title>
+ <meta charset="UTF-8">
+ <style type="text/css">
+ body{
+     background-color:white;
+     margin: 0px;
+ }
+ .header{
+ 	background-color: #01B9F5;
+ 	color:#012B74;
+    padding-top:5px;
+    padding-bottom:5px; 
+    font: 'Special Elite', cursive;
+    text-align: center;
+ 
+}
+ .header h1{
+ 	
+ 	font-size: 40px;
+ 	font-family:'Lobster Two', cursive;
+ 	text-align:center;
+ }
+ 
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#012B74;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.bar{
+	overflow:hidden;
+	background-color:#012B74;
+	margin:0;
+	padding-left:6px;
+	color:white;
+}
+.bar a{
+	 align-self: right;
+	 color:white;
+	 float: right;
+	 font-size: 20px;
+	 padding-right: 20px;
+
+}
+.form{
+	text-align: right;
+	font-size: 20px;
+
+	color:white;
+	font: 'Special Elite', cursive;
+
+}
+.reg{
+	 text-align: center;
+	 color:#012B74;
+	 font-size: 20px; 
+	 padding:60px;
+}
+ .mar{
+	bottom: 0;
+	left: 0;
+	right:0;
+	
+    padding:20px;
+	background-color:#012B74;
+	color:white;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+.copy{
+	background-color:#01B9F5;
+	color:#012B74;
+	margin:0px;
+	padding:50px;
+
+
+	}
+	.links{
+		padding-left: 150px;
+		font-size: 30px;
+		font-family: 'Special Elite', cursive;; 
+	}
+	
+     
+
+.foo{
+	padding-top:5px;
+    padding-left: 150px;
+	text-decoration: none;
+	font-family:Lobster+Two; 
+	font-size: 20px;
+	color: #012B74;
+	
+}
+.site_footer{
+	list-style-type: none;
+	padding-top: 7px;
+	letter-spacing: 3px;
+	line-height: 25px;
+}
+.links{
+	font-family:'Special Elite', cursive;
+	font-size: 30px; 
+	padding-top: 10px;
+}
+#con{
+	text-align:right;
+	padding-right: 150px;
+
+	padding-top:1px;
+}
+ul{
+
+	list-style-type: none;
+}
+li{
+	list-style-type: none;
+}
+
+ 	
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1>easypay</h1>
+		<p>pay your bill online </p>
+	</div>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">elctricity </a>
+  <a href="#">gas</a>
+  <a href="#">house tax</a>
+  <a href="#">mobile recharge</a>
+</div>
+
+<div class="bar">
+<span style="font-size:30px;cursor:pointer;margin:0;" onclick="openNav()">&#9776;   </span>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<div class="form">
+    <form action="/action_page.php">
+    	username:
+      <input type="text" placeholder="Username" name="username">
+      password:
+      <input type="password" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+    </div>
+</div>
+<div class="reg">
+	<h1> create your account </h1>
+	<form> 
+		username:
+		<input type="text" placeholder="username" name="username"><br><br>
+		password:
+		<input type="password" name="password" placeholder="set password"><br><br>
+		confirm password:
+		<input type="password" name="password" placeholder="confirm password"><br><br>
+		<button type="submit">register</button>
+		</form>
+		</div> 
+		<footer class="footer">
+		<div class="mar">
+			
+				<marquee>pay your electricity,gas,water bills online using easy pay also recharge your mobile phone through easypay securely</marquee>
+				</div>
+		<div class="copy">
+			
+			<h2 class="links"> links  </h2>
+			<div class="site_footer">
+		                                                                                      
+		<li><a href="#" class="foo">elctricity </a></li>                                                                     
+   <li><a href="#" class="foo" >gas     </a></li>                                                                        
+   <li> <a href="#" class="foo">house tax   </a></li>                                                                   
+  <li>  <a href="#" class="foo">mobile recharge  </a></li></div>
+  
+  <div id="con">
+<div class="links">contact details</div>
+	
+	<li class="foo">7995754564</li>
+	<li class="foo">sudheera2727@gmail.com</li>
+</div>
+</div>
+</footer>
+
+	</body>
+	</html>
